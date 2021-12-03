@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/field"
+            app:srcCompat="@drawable/trezubec" />
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/field_top"
+            android:ems="10"
+            android:hint="Введите email"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/field_bottom"
+            android:ems="10"
+            android:hint="Введите пароль"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp" />
+
+        <Button
+            android:id="@+id/enterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/field"
+            android:layout_marginHorizontal="70dp"
+            android:textSize="24dp"
+            android:text="Войти" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:padding="20dp"
+            android:background="@drawable/field"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
