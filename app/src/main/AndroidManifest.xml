@@ -10,13 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proga">
         <activity
-            android:name=".Activity2"
+            android:name=".RegActivity"
             android:exported="true" >
-        <intent-filter>
-            <action android:name=".Activity2" />
+            <intent-filter>
+                <action android:name=".RegActivity" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name=".Activity2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
